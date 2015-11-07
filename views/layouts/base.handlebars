@@ -3,8 +3,44 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
   </head>
   <body>
+    <header>
+
+      <div class = "jumbotron">
+        <div class = "container">
+          <h1>MindTrack Jams for your Mind</h1>
+          <button id="myButton" type="button" class="btn btn-success btn-lg">Get your Jam on</button>
+
+
+          <script type="text/javascript">
+            document.getElementById("myButton").onclick = function () {
+              location.href = "/authorize";
+            };
+          </script>
+          <button id="mind" type="button" class="btn btn-warning btn-lg">Tune in With your Brain</button>
+          <button id="strangerDanger" type="button" class="btn btn-danger btn-lg">Sign Off</button>
+          <style>
+          .btn {
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                border-radius: 20px;
+              }
+
+          h1  {
+            font-family: Dosis
+          }
+          div {
+            text-align: center;
+          }
+          </style>
+        </div>
+      </div>
+
+    </header>
     {{{body}}}
   </body>
 </html>
