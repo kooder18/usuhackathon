@@ -17,7 +17,7 @@ var client_id = '839b60144cdf4d3398a681d976208eae';
 var client_secret = 'c0e83e9a2c37401bab7f74eb2ad77a49';
 var redirect_uri = 'http://localhost:3000/callback';
 
-
+var client_test = '';
 
 var stateKey = 'spotify_auth_state';
 
@@ -46,31 +46,11 @@ app.get('/authorize', function(req, res){
   var url = 'https://accounts.spotify.com/authorize?' + query
 
     res.redirect(url)
-})
-/*
-app.get('/login', function(req, res){
-
-  var state = generateRandomString(16);
-  res.cookie(stateKey, state)
-
-  var scope = 'user-read-private user-read-email';
-
-
-  res.redirect('https://accounts.spotify.com/authorize?' +
-    querystring.stringify({
-      response_type: 'code',
-      client_id: client_id,
-      scope: scope,
-      redirect_uri: redirect_uri,
-      state: stategit
-    }));
-
-
-    res.redirect('localhost:3000/callback');
-
+    //res.render('index')
+    //module.import('index')
 
 })
-*/
+
 app.get('/callback', function(req, res){
   res.render('test')
 })
