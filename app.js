@@ -52,7 +52,7 @@ app.get('/authorize', function(req, res){
 })
 
 app.get('/callback', function(req, res){
-  res.render('test')
+  res.render('slow')
 })
 
 
