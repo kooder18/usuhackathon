@@ -1,2 +1,0 @@
-# hackusu
-a hackathon!!!!
