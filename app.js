@@ -52,6 +52,8 @@ app.get('/authorize', function(req, res){
 })
 
 app.get('/callback', function(req, res){
+  //When not hooked up to the headset just render a specific page
+  //Otherwise an if else if statement here does the trick
   res.render('slow')
 })
 
